@@ -1,16 +1,21 @@
 <h2>Create Page</h2>
 
-<div class="container">
-  <form class="form-signin">
-    <h2 class="form-signin-heading">Sign Up</h2>
-    <label for="fullName" class="sr-only">Full Name</label>
-    <input type="text" id="fullName" class="form-control" placeholder="Full Name" required="" autofocus="" autocomplete="off" value="">
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" autocomplete="off" value="">
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" autocomplete="off" value="">
-    <button class="btn btn-lg btn-primary" id="signup" type="submit">Sign up</button>
-    <a href="#login">Login</a>
-  </form>
-
-</div>
+<form class="form-horizontal post-form" role="form" method="post">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Title</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Title" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Post</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="create" name="submit" type="submit" value="Create" class="btn btn-primary">
+        </div>
+    </div>
+</form>

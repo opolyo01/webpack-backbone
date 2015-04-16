@@ -10,6 +10,7 @@ module.exports = Backbone.View.extend({
     template: require('../templates/create-page.html'),
     
     handleCreate: function(e){
+      console.log("create");
       e.preventDefault();
     },
 
