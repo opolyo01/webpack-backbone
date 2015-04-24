@@ -10,7 +10,6 @@ module.exports = Backbone.Router.extend({
     edit: null,
     create: null,
     home: null,
-    container:null,
     
     initialize: function() { 
     },

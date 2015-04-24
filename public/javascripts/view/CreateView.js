@@ -11,6 +11,7 @@ module.exports = Backbone.View.extend({
     
     handleCreate: function(e){
       console.log("create");
+      window.location.hash = "#home";
       e.preventDefault();
     },
 
